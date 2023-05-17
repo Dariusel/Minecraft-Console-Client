@@ -120,7 +120,7 @@ namespace MinecraftClient.Protocol.Handlers
             }
 
             if (handler.GetInventoryEnabled() &&
-                (protocolVersion < MC_1_9_Version || protocolVersion > MC_1_19_4_Version))
+                (protocolVersion < MC_1_8_Version || protocolVersion > MC_1_19_4_Version))
             {
                 log.Error("§c" + Translations.extra_inventory_disabled);
                 handler.SetInventoryEnabled(false);
